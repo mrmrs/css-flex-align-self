@@ -27,7 +27,7 @@ or download the css on github and include in your project.
 .as-s {  align-self: stretch; }
 .as-i {  align-self: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .as-a-ns {  align-self: auto; }
   .as-fs-ns { align-self: flex-start; }
   .as-fe-ns { align-self: flex-end; }
@@ -37,7 +37,7 @@ or download the css on github and include in your project.
   .as-i-ns {  align-self: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .as-a-m {  align-self: auto; }
   .as-fs-m { align-self: flex-start; }
   .as-fe-m { align-self: flex-end; }
@@ -47,7 +47,7 @@ or download the css on github and include in your project.
   .as-i-m {  align-self: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .as-a-l {  align-self: auto; }
   .as-fs-l { align-self: flex-start; }
   .as-fe-l { align-self: flex-end; }
