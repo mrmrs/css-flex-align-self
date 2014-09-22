@@ -9,13 +9,18 @@
 *  -l  = large
 
 ## Install
+Grab the css partial from github and include it in your project or alternatively
+you can install it via npm:
 ```
 npm install --save-dev css-flex-align-self
 ```
-or download the css on github and include in your project.
+View on [npm](https://www.npmjs.org/package/css-flex-align-self)
+
 
 ## File Size
 
+1.1K flex-align-self.css
+895B flex-align-self.min.css
 
 ## The Code
 ```
