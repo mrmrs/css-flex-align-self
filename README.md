@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-flex-align-self)
 ## File Size
 
 1.1K flex-align-self.css
-895B flex-align-self.min.css
+895B flex-align-self.min.css 
+227B minified and gzipped
 
 ## The Code
 ```
