@@ -1,7 +1,7 @@
 {
   "name": "css-flex-align-self",
   "style": "flex-align-self.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-flex-align-self",
   "description": "Css module of single purpose classes for flex align self",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-flex-align-self.css > css/css-flex-align-self.css && tachyons src/css-flex-align-self.css --minify > css/css-flex-align-self.min.css && tachyons src/css-flex-align-self.css --generate-docs --package=../../package.json > readme.md"
