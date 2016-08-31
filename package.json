@@ -1,7 +1,7 @@
 {
   "name": "css-flex-align-self",
   "style": "flex-align-self.css",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "http://github.com/mrmrs/css-flex-align-self",
   "description": "Css module of single purpose classes for flex align self",
   "keywords": [
