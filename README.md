@@ -1,10 +1,10 @@
-# css-flex-align-self 0.0.7
+# css-flex-align-self 1.0.6
 
 Css module of single purpose classes for flex align self
 
 #### Stats
 
-272 | 28 | 28
+339 | 28 | 72
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-flex-align-self
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-flex-align-self
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-flex-align-self.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-flex-align-self";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-flex-align-self@1.0.6/css/css-flex-align-self.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,48 +68,48 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    FLEX ALIGN SELF
 */
-.as-a { align-self: auto; }
-.as-fs { align-self: flex-start; }
-.as-fe { align-self: flex-end; }
-.as-c { align-self: center; }
-.as-b { align-self: baseline; }
-.as-s { align-self: stretch; }
-.as-i { align-self: inherit; }
+.as-a { -ms-flex-item-align: auto; -ms-grid-row-align: auto; align-self: auto; }
+.as-fs { -ms-flex-item-align: start; align-self: flex-start; }
+.as-fe { -ms-flex-item-align: end; align-self: flex-end; }
+.as-c { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
+.as-b { -ms-flex-item-align: baseline; align-self: baseline; }
+.as-s { -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; }
+.as-i { -ms-flex-item-align: inherit; -ms-grid-row-align: inherit; align-self: inherit; }
 @media screen and (min-width: 48em) {
- .as-a-ns { align-self: auto; }
- .as-fs-ns { align-self: flex-start; }
- .as-fe-ns { align-self: flex-end; }
- .as-c-ns { align-self: center; }
- .as-b-ns { align-self: baseline; }
- .as-s-ns { align-self: stretch; }
- .as-i-ns { align-self: inherit; }
+ .as-a-ns { -ms-flex-item-align: auto; -ms-grid-row-align: auto; align-self: auto; }
+ .as-fs-ns { -ms-flex-item-align: start; align-self: flex-start; }
+ .as-fe-ns { -ms-flex-item-align: end; align-self: flex-end; }
+ .as-c-ns { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
+ .as-b-ns { -ms-flex-item-align: baseline; align-self: baseline; }
+ .as-s-ns { -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; }
+ .as-i-ns { -ms-flex-item-align: inherit; -ms-grid-row-align: inherit; align-self: inherit; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .as-a-m { align-self: auto; }
- .as-fs-m { align-self: flex-start; }
- .as-fe-m { align-self: flex-end; }
- .as-c-m { align-self: center; }
- .as-b-m { align-self: baseline; }
- .as-s-m { align-self: stretch; }
- .as-i-m { align-self: inherit; }
+ .as-a-m { -ms-flex-item-align: auto; -ms-grid-row-align: auto; align-self: auto; }
+ .as-fs-m { -ms-flex-item-align: start; align-self: flex-start; }
+ .as-fe-m { -ms-flex-item-align: end; align-self: flex-end; }
+ .as-c-m { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
+ .as-b-m { -ms-flex-item-align: baseline; align-self: baseline; }
+ .as-s-m { -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; }
+ .as-i-m { -ms-flex-item-align: inherit; -ms-grid-row-align: inherit; align-self: inherit; }
 }
 @media screen and (min-width: 64em) {
- .as-a-l { align-self: auto; }
- .as-fs-l { align-self: flex-start; }
- .as-fe-l { align-self: flex-end; }
- .as-c-l { align-self: center; }
- .as-b-l { align-self: baseline; }
- .as-s-l { align-self: stretch; }
- .as-i-l { align-self: inherit; }
+ .as-a-l { -ms-flex-item-align: auto; -ms-grid-row-align: auto; align-self: auto; }
+ .as-fs-l { -ms-flex-item-align: start; align-self: flex-start; }
+ .as-fe-l { -ms-flex-item-align: end; align-self: flex-end; }
+ .as-c-l { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
+ .as-b-l { -ms-flex-item-align: baseline; align-self: baseline; }
+ .as-s-l { -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; }
+ .as-i-l { -ms-flex-item-align: inherit; -ms-grid-row-align: inherit; align-self: inherit; }
 }
 ```
 
@@ -111,3 +129,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
