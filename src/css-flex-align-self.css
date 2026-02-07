@@ -11,13 +11,13 @@
 .as-i {  align-self: inherit; }
 
 @media screen and (min-width: 48em) {
-  .as-a-ns {  align-self: auto; }
-  .as-fs-ns { align-self: flex-start; }
-  .as-fe-ns { align-self: flex-end; }
-  .as-c-ns {  align-self: center; }
-  .as-b-ns {  align-self: baseline; }
-  .as-s-ns {  align-self: stretch; }
-  .as-i-ns {  align-self: inherit; }
+  .as-a-s {  align-self: auto; }
+  .as-fs-s { align-self: flex-start; }
+  .as-fe-s { align-self: flex-end; }
+  .as-c-s {  align-self: center; }
+  .as-b-s {  align-self: baseline; }
+  .as-s-s {  align-self: stretch; }
+  .as-i-s {  align-self: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
