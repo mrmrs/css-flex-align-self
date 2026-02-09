@@ -10,7 +10,7 @@
 .as-s {  align-self: stretch; }
 .as-i {  align-self: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .as-a-s {  align-self: auto; }
   .as-fs-s { align-self: flex-start; }
   .as-fe-s { align-self: flex-end; }
@@ -20,7 +20,7 @@
   .as-i-s {  align-self: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .as-a-m {  align-self: auto; }
   .as-fs-m { align-self: flex-start; }
   .as-fe-m { align-self: flex-end; }
@@ -30,7 +30,7 @@
   .as-i-m {  align-self: inherit; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .as-a-l {  align-self: auto; }
   .as-fs-l { align-self: flex-start; }
   .as-fe-l { align-self: flex-end; }
