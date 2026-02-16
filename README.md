@@ -1,132 +1,96 @@
-# css-flex-align-self 1.0.6
+# css-flex-align-self
 
-Css module of single purpose classes for flex align self
+Functional CSS for flex-align-self
 
-#### Stats
+## Filesize
 
-339 | 28 | 72
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/flex-align-self.css` | 1593 bytes |
+| `dist/flex-align-self.min.css` | 1201 bytes (224 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-flex-align-self
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-flex-align-self
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-flex-align-self.git
+```sh
+npm install css-flex-align-self
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-flex-align-self";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-flex-align-self@1.0.6/css/css-flex-align-self.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-flex-align-self">
+<link rel="stylesheet" href="https://unpkg.com/css-flex-align-self/dist/flex-align-self.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   FLEX ALIGN SELF
-*/
-.as-a { -ms-flex-item-align: auto; -ms-grid-row-align: auto; align-self: auto; }
-.as-fs { -ms-flex-item-align: start; align-self: flex-start; }
-.as-fe { -ms-flex-item-align: end; align-self: flex-end; }
-.as-c { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
-.as-b { -ms-flex-item-align: baseline; align-self: baseline; }
-.as-s { -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; }
-.as-i { -ms-flex-item-align: inherit; -ms-grid-row-align: inherit; align-self: inherit; }
-@media screen and (min-width: 48em) {
- .as-a-ns { -ms-flex-item-align: auto; -ms-grid-row-align: auto; align-self: auto; }
- .as-fs-ns { -ms-flex-item-align: start; align-self: flex-start; }
- .as-fe-ns { -ms-flex-item-align: end; align-self: flex-end; }
- .as-c-ns { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
- .as-b-ns { -ms-flex-item-align: baseline; align-self: baseline; }
- .as-s-ns { -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; }
- .as-i-ns { -ms-flex-item-align: inherit; -ms-grid-row-align: inherit; align-self: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .as-a-m { -ms-flex-item-align: auto; -ms-grid-row-align: auto; align-self: auto; }
- .as-fs-m { -ms-flex-item-align: start; align-self: flex-start; }
- .as-fe-m { -ms-flex-item-align: end; align-self: flex-end; }
- .as-c-m { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
- .as-b-m { -ms-flex-item-align: baseline; align-self: baseline; }
- .as-s-m { -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; }
- .as-i-m { -ms-flex-item-align: inherit; -ms-grid-row-align: inherit; align-self: inherit; }
-}
-@media screen and (min-width: 64em) {
- .as-a-l { -ms-flex-item-align: auto; -ms-grid-row-align: auto; align-self: auto; }
- .as-fs-l { -ms-flex-item-align: start; align-self: flex-start; }
- .as-fe-l { -ms-flex-item-align: end; align-self: flex-end; }
- .as-c-l { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
- .as-b-l { -ms-flex-item-align: baseline; align-self: baseline; }
- .as-s-l { -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; }
- .as-i-l { -ms-flex-item-align: inherit; -ms-grid-row-align: inherit; align-self: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-flex-align-self/dist/flex-align-self.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.align-self-auto` | `align-self: auto;` |
+| `.align-self-start` | `align-self: flex-start;` |
+| `.align-self-end` | `align-self: flex-end;` |
+| `.align-self-center` | `align-self: center;` |
+| `.align-self-baseline` | `align-self: baseline;` |
+| `.align-self-stretch` | `align-self: stretch;` |
+| `.align-self-inherit` | `align-self: inherit;` |
+| `.align-self-auto-s` | `align-self: auto;` |
+| `.align-self-start-s` | `align-self: flex-start;` |
+| `.align-self-end-s` | `align-self: flex-end;` |
+| `.align-self-center-s` | `align-self: center;` |
+| `.align-self-baseline-s` | `align-self: baseline;` |
+| `.align-self-stretch-s` | `align-self: stretch;` |
+| `.align-self-inherit-s` | `align-self: inherit;` |
+| `.align-self-auto-m` | `align-self: auto;` |
+| `.align-self-start-m` | `align-self: flex-start;` |
+| `.align-self-end-m` | `align-self: flex-end;` |
+| `.align-self-center-m` | `align-self: center;` |
+| `.align-self-baseline-m` | `align-self: baseline;` |
+| `.align-self-stretch-m` | `align-self: stretch;` |
+| `.align-self-inherit-m` | `align-self: inherit;` |
+| `.align-self-auto-l` | `align-self: auto;` |
+| `.align-self-start-l` | `align-self: flex-start;` |
+| `.align-self-end-l` | `align-self: flex-end;` |
+| `.align-self-center-l` | `align-self: center;` |
+| `.align-self-baseline-l` | `align-self: baseline;` |
+| `.align-self-stretch-l` | `align-self: stretch;` |
+| `.align-self-inherit-l` | `align-self: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.align-self-auto-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/flex-align-self.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/flex-align-self.css` — formatted
+- `dist/flex-align-self.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
